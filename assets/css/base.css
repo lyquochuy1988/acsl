@@ -1,0 +1,158 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #a0a0a0;
+    --title-color: #555;
+    --sub-title-color: #9a9a9a;
+    --primary-color: #c10e21;
+    --second-color: #e11127;
+    --button-bg: #e11127;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Rockwell-Bold';
+    src: url('../fonts/Rockwell-Bold.eot');
+    src: url('../fonts/Rockwell-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Rockwell-Bold.woff2') format('woff2'), url('../fonts/Rockwell-Bold.woff') format('woff'), url('../fonts/Rockwell-Bold.svg#Rockwell-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('../fonts/Rockwell.eot');
+    src: url('../fonts/Rockwell.eot?#iefix') format('embedded-opentype'), url('../fonts/Rockwell.woff2') format('woff2'), url('../fonts/Rockwell.woff') format('woff'), url('../fonts/Rockwell.svg#Rockwell') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-family: 'Rockwell', sans-serif;
+    font-size: 62.5%;
+    color: #a3a3a3;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rockwell-Bold', sans-serif;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    padding: 12px 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.pull-right {
+    float: right;
+}
+
+.yellow {
+    background-color: #ffd205;
+    color: var(--white-color);
+}
+
+.yellow-gradient {
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+    color: var(--white-color);
+}
+
+.pink {
+    background-color: #f76570;
+    color: var(--white-color);
+}
+
+.pink-gradient {
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+    color: var(--white-color);
+}
+
+.purple {
+    background-color: #ba71da;
+    color: var(--white-color);
+}
+
+.purple-gradient {
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+    color: var(--white-color);
+}
+
+.green-gradient {
+    background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+    color: var(--white-color);
+}
+
+.brick-gradient {
+    background: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+    color: var(--white-color);
+}
+
+.blue {
+    background-color: #14b9d5;
+    color: var(--white-color);
+}
+
+.blue-gradient {
+    background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+    color: var(--white-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
