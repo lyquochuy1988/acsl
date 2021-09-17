@@ -173,6 +173,22 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    label.option {
+        padding: 6px;
+        margin: 6px 0;
+    }
+    label.option input {
+        height: 40px;
+        width: 40px;
+    }
+    .question {
+        padding: 10px;
+        font-size: 16px;
+        margin: 6px 0 6px 0;
+    }
+}
+
 
 /* Small Mobile */
 

@@ -11,6 +11,7 @@ var optionList = document.querySelector('.label-container')
 var modal = document.querySelector('.modal')
 var modalClose = document.querySelector('.modal__close')
 var modalBody = document.querySelector('.modal__body')
+var modalClose = document.querySelector('.modal__close')
 
 var que_count = 0
 let que_numb = 1;
@@ -21,7 +22,7 @@ startBtn.onclick = (e) => {
     e.preventDefault()
     modal.classList.add('open')
     container.classList.add("activeContainer"); //show info box
-    startContainer.classList.add('hide')
+    // startContainer.classList.add('hide')
 }
 
 nextButton.onclick = () => {
@@ -35,6 +36,12 @@ nextButton.onclick = () => {
 
         showResult(); //calling showResult function
     }
+}
+
+modalClose.onclick = (e) => {
+    e.preventDefault();
+    modal.classList.remove('open');
+    container.classList.remove("activeContainer");
 }
 
 
