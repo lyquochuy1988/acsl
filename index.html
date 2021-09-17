@@ -42,10 +42,10 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
 
-
 </head>
 
 <body>
+    <video src="./assets/video/medical-emergency-helicopter-unit.mp4" autoplay loop playsinline muted></video>
     <div id="app">
         <div class="header">
             <div class="grid">
@@ -76,7 +76,7 @@
                     <div class="row">
                         <div class="col l-6 m-12 c-12">
                             <p class="edit-img">
-                                <img class="app-mobile-2" src="./assets/img/app_1-red.png" alt="" width="600">
+                                <img class="app-mobile-2" src="./assets/img/app_1-red-full.png" alt="" width="600">
                             </p>
                         </div>
                         <div class="col l-6 m-12 c-12">
@@ -101,14 +101,13 @@
                 <div class="grid">
                     <div class="row">
                         <div class="col l-6 m-12 c-12 left-mb">
-                            <h2>This is section for QUIZ</h2>
-                            <p class="paragraph">
-                                Function working ... purpose for demo
-                            </p>
+                            <div class="wrap-button">
+                                <a id="start-btn" href="#" class="btn download-btn">Start Quiz</a>
+                            </div>
                         </div>
                         <div class="col l-6 m-12 c-12">
                             <p class="edit-img">
-                                <img class="app-mobile-2" src="./assets/img/app_2.jpeg" alt="" width="420">
+                                <img class="app-mobile-2" src="./assets/img/acsl_2.jpeg" alt="" width="420">
                             </p>
                         </div>
                     </div>
@@ -160,9 +159,39 @@
         </div>
     </div>
     <!--end app-->
+    <div class="quiz-section">
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <div id="quiz-container" class="quiz-container">
+                    <div id="question" class="question"></div>
+                    <div id="images-gif">
+                    </div>
+                    <div class="label-container">
+                        <label class="option"><input type="radio" class="radio" name="option" value="1" /> <span id="opt1"></span></label>
+                        <label class="option"><input type="radio" class="radio" name="option" value="2" /> <span id="opt2"></span></label>
+                        <label class="option"><input type="radio" class="radio" name="option" value="3" /> <span id="opt3"></span></label>
+                        <label class="option"><input type="radio" class="radio" name="option" value="4" /> <span id="opt4"></span></label>
+                    </div>
+                    <div class="next-container">
+                        <button id="next-button" class="next-btn">Next Question</button>
+                    </div>
+                </div>
+                <div id="result" class="quiz-container result">
+                    <div class="score">
+                    </div>
+                    <div class="buttons">
+                        <!-- <button class="quit-quiz">Quit Quiz</button> -->
+                        <a href="#" class="quit-quiz btn download-btn">Quit Quiz</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.magma.quizapp" class="btn download-btn">DOWNLOAD NOW!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
+    <script src="./assets/js/question.js"></script>
+    <script src="./assets/js/quiz.js"></script>
 </body>
 
 </html>
